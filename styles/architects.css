@@ -196,8 +196,12 @@ main>section {
         flex-direction: column;
     }
 
-    .our-features-image-container {
+    .our-features-image-container,
+    .facts-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        gap: 20px;
     }
 
     .our-features {
@@ -208,9 +212,14 @@ main>section {
 
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width:991.98px) {
-
     .our-features,
     .navbar {
         flex-direction: column;
     }
+    .our-features-image-container{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    /* .fact-card-content > img{
+        width: 95%;
+    } */
 }
