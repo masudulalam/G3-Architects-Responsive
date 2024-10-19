@@ -89,3 +89,14 @@
 .banner-paragraph{
     line-height: 1.62rem;
 }
+.banner-image{
+    width: 100%;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 575.98px) {
+    .navbar, 
+    .nav-links{
+        flex-direction: column;
+    } 
+}
