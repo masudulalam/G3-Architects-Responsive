@@ -16,6 +16,15 @@
     background: rgba(255, 144, 14, 0.1);
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+
 .btn-primary {
     color: white;
     background: rgb(255, 144, 14);
@@ -36,6 +45,22 @@
 
 .Dark-03 {
     color: rgb(114, 114, 114);
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+}
+.normal-txt {
+    line-height: 1.62rem;
+}
+
+.mt-24{
+    margin-top: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
 }
 
 /* header styles */
@@ -86,17 +111,35 @@
     font-weight: 700;
     line-height: 4.68rem;
 }
-.banner-paragraph{
-    line-height: 1.62rem;
-}
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
 
+/* our features style */
+.our-features {
+    gap: 75px;
+    align-items: center;
+}
+.our-features-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features-text-container{
+    max-width: 540px;
+}
+#quick-txt{
+    font-weight: 500;
+}
+#feature-txt{
+    color: rgb(255, 144, 14);
+}
 /* Responsive Media Query */
 @media screen and (max-width: 575.98px) {
-    .navbar, 
-    .nav-links{
+
+    .navbar,
+    .nav-links {
         flex-direction: column;
-    } 
+    }
 }
