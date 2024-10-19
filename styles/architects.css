@@ -68,6 +68,10 @@ main>section {
 .section-text {
     max-width: 540px;
 }
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
 
 .mt-24 {
     margin-top: 24px;
@@ -184,6 +188,18 @@ main>section {
 }
 .fact-card-text{
     margin-top: 10px;
+}
+
+/* our sponsors styles */
+.our-sponsors-header{
+    margin: 24px 0;
+}
+.sponsors-container{
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sponsors-container img{
+    filter: grayscale(100%);
 }
 
 /* Responsive Media Query */
