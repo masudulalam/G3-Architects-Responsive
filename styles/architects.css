@@ -21,7 +21,7 @@ main {
     margin: 0 auto;
 }
 
-main > section{
+main>section {
     margin-top: 130px;
 }
 
@@ -52,15 +52,28 @@ main > section{
     font-weight: 700;
     line-height: 3.3rem;
 }
+
 .normal-txt {
     line-height: 1.62rem;
     color: rgb(114, 114, 114);
 }
 
-.mt-24{
+.secondary-txt {
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.section-text {
+    max-width: 540px;
+}
+
+.mt-24 {
     margin-top: 24px;
 }
-.mb-32{
+
+.mb-32 {
     margin-bottom: 32px;
 }
 
@@ -123,55 +136,81 @@ main > section{
     align-items: center;
     padding: 0 60px;
 }
-.our-features-image-container{
+
+.our-features-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-features-text-container{
+
+.our-features-text-container {
     max-width: 540px;
 }
-#quick-txt{
+
+#quick-txt {
     font-weight: 500;
 }
-#feature-txt{
+
+#feature-txt {
     color: rgb(255, 144, 14);
 }
 
 /* some facts styles */
-.facts-container{
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
-    margin-top: 100px;
+    margin: 100px 50px 0 50px;
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
-    /* padding: 45px 35px 60px 35px; */
+    width: 240px;
+    height: 240px;
 }
-.fact-card-content{
+
+.fact-card-content {
     margin: 45px 35px 60px 35px;
     text-align: center;
 }
+
+.card-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    color: rgb(66, 66, 66);
+    margin: 10px 0;
+}
+.fact-card-text{
+    margin-top: 10px;
+}
+
 /* Responsive Media Query */
 /* for small devices */
 @media screen and (max-width: 575.98px) {
+
     .navbar,
     .nav-links,
     .our-features {
         flex-direction: column;
     }
-    .our-features-image-container{
+
+    .our-features-image-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .our-features {
         gap: 40px;
         padding: 0 20px;
     }
 }
+
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width:991.98px) {
-    .our-features, 
-    .navbar{
+
+    .our-features,
+    .navbar {
         flex-direction: column;
     }
 }
