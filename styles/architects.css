@@ -120,6 +120,7 @@ main > section{
 .our-features {
     gap: 75px;
     align-items: center;
+    padding: 0 60px;
 }
 .our-features-image-container{
     display: grid;
@@ -136,10 +137,25 @@ main > section{
     color: rgb(255, 144, 14);
 }
 /* Responsive Media Query */
+/* for small devices */
 @media screen and (max-width: 575.98px) {
-
     .navbar,
-    .nav-links {
+    .nav-links,
+    .our-features {
+        flex-direction: column;
+    }
+    .our-features-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features {
+        gap: 40px;
+        padding: 0 20px;
+    }
+}
+/* for medium devices */
+@media screen and (min-width: 576px) and (max-width:991.98px) {
+    .our-features, 
+    .navbar{
         flex-direction: column;
     }
 }
